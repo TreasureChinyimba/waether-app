@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-weather-display',
   templateUrl: './weather-display.component.html',
-  styleUrl: './weather-display.component.css'
+  styleUrls: ['./weather-display.component.css']
 })
 export class WeatherDisplayComponent {
-
+  @Input() weatherData: any; // Input property to receive weather data from parent component
 }

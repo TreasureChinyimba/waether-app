@@ -1,1 +1,7 @@
-<p>weather-display works!</p>
+<div *ngIf="weatherData">
+    <h2>{{ weatherData.name }} Weather</h2>
+    <p>Temperature: {{ weatherData.main.temp }}°C</p>
+    <p>Description: {{ weatherData.weather[0].description }}</p>
+    <!-- Add more weather properties as needed -->
+  </div>
+  
