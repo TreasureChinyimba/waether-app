@@ -31,3 +31,9 @@ button {
 button:hover {
     background: red;
 }
+
+h1 {
+    padding: 60px;
+    color: white;
+    text-align: center;
+}
