@@ -12,6 +12,6 @@ export class SearchBarComponent {
   constructor() { }
 
   search() {
-    alert(this.searchCity.emit(this.city))
+    this.searchCity.emit(this.city);
   }
 }
