@@ -1,0 +1,26 @@
+.input-section {
+    margin: 50px;
+}
+
+input {
+    width :50vh;
+    border: none;
+    border-bottom: solid red;
+    background: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+button {
+    padding: 10px;
+    border: red solid 1px;
+    color: white;
+    border-radius: 10px;
+    background: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    background: red;
+}
