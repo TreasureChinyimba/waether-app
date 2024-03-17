@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./weather-display.component.css']
 })
 export class WeatherDisplayComponent {
-  @Input() weatherData: any; // Input data from parent component
+  @Input() weatherData: any; 
 
   constructor() { }
 }
