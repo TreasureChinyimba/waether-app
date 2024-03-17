@@ -6,11 +6,12 @@ import { Component, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./search-bar.component.css']
 })
 export class SearchBarComponent {
-  city: string = ''; // Property to store the city input value
+  city: string = ''; // Property to store the entered city name
+  @Output() searchCity = new EventEmitter<string>(); // Event emitter for search query
 
-  @Output() searchCity = new EventEmitter<string>(); // Event emitter to send the city name to parent component
+  constructor() { }
 
   search() {
-    this.searchCity.emit(this.city); // Emit the city name when the search button is clicked
+    this.searchCity.emit(this.city); // Emit the entered city name
   }
 }
