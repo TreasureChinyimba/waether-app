@@ -5,6 +5,20 @@ div {
     border-radius: 10px;
     border: 1px rgba(255, 255, 255, 0.288) solid;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.219);
+    animation-name: show;
+    animation-duration: 3s;
+}
+
+@keyframes show {
+    from{
+        border: red solid 1px;
+        padding: 5px;
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    
 }
 
 h2 {
